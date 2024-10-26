@@ -1,0 +1,33 @@
+.email-list-item {
+    display: flex;
+    alignItems: center;
+    padding: 8px 0 8px 0;
+}
+.email-list-root {
+    height: 240;
+    flexGrow: 1;
+    maxWidth: 400;
+}
+.bg-gray-80 {
+    background-color: #D0D0D0;
+}
+.email-button-active {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-border-opacity: 1;
+  border-color: rgb(222 224 228 / var(--tw-border-opacity));
+  border-right-width: 2px;
+  gap: 0.5rem;
+  cursor: pointer;
+  display: flex
+}
+.email-button-disabled {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-border-opacity: 1;
+  border-color: rgb(222 224 228 / var(--tw-border-opacity));
+  border-right-width: 2px;
+  gap: 0.5rem;
+  cursor: not-allowed;
+  display: flex
+}
