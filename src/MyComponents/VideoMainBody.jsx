@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import videoInfo from "./videoTranscriptInfo.json";
-import {ArrowLeftFromLine , ArrowRightFromLine } from 'lucide-react'
+// import {ArrowLeftFromLine , ArrowRightFromLine } from 'lucide-react'
 import "./videoMainBodyStyle.css";
 import {  AiOutlineBold, AiOutlineItalic, AiOutlineUnderline, AiOutlineFontColors} from "react-icons/ai";
+import { LuArrowLeftFromLine,  LuArrowRightFromLine } from "react-icons/lu";
 
 function VideoMainBody() {
   const [videoCurrentTime, setVideoCurrentTime] = useState(0);
@@ -128,8 +129,8 @@ function VideoMainBody() {
           </button>
 
           
-          <button className='edit-btn split-btn' onClick={() => handleSplit('backward')}><ArrowLeftFromLine />Split</button>
-          <button className='edit-btn split-btn' onClick={() => handleSplit('forward')}>Split<ArrowRightFromLine /></button>
+          <button className='edit-btn split-btn' onClick={() => handleSplit('backward')}><LuArrowLeftFromLine />Split</button>
+          <button className='edit-btn split-btn' onClick={() => handleSplit('forward')}>Split<LuArrowRightFromLine /></button>
         </div>
         <div className='player-container'>
           <div id="video-player"></div>
