@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import videoInfo from "./videoTranscriptInfo.json";
-import { Bold, Italic, Underline, ArrowLeftFromLine , ArrowRightFromLine } from 'lucide-react'
+import {ArrowLeftFromLine , ArrowRightFromLine } from 'lucide-react'
 import "./videoMainBodyStyle.css";
 import {  AiOutlineBold, AiOutlineItalic, AiOutlineUnderline, AiOutlineFontColors} from "react-icons/ai";
 
